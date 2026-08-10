@@ -1,0 +1,35 @@
+name: Job Search Agent
+
+on:
+  schedule:
+    # 12:00 UTC daily = 7:00am Central (adjust to taste)
+    - cron: "0 12 * * *"
+  workflow_dispatch: {}   # lets you trigger it manually from the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  search:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run job agent
+        env:
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASS: ${{ secrets.SMTP_PASS }}
+          NOTIFY_EMAIL: ${{ secrets.NOTIFY_EMAIL }}
+        run: python main.py
+
+      - name: Persist seen-jobs state
+        run: |
+          git config user.name "job-agent-bot"
+          git config user.email "actions@github.com"
+          git add data/seen.json
+          git diff --cached --quiet || git commit -m "Update seen jobs [skip ci]"
+          git push
