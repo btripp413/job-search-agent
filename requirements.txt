@@ -1,0 +1,2 @@
+# No third-party dependencies — everything uses the Python standard library
+# (urllib, json, smtplib, xml.etree) so GitHub Actions runs need no pip install.

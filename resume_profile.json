@@ -1,0 +1,45 @@
+{
+  "name": "Brittany Tripp",
+  "target_titles": [
+    "Digital Project Manager",
+    "Senior Project Manager",
+    "Client Success Manager",
+    "Customer Success Manager",
+    "Implementation Manager",
+    "Implementation Consultant",
+    "SaaS Operations Manager",
+    "Program Manager",
+    "Account Manager",
+    "Onboarding Manager",
+    "Workflow Specialist",
+    "Client Services Manager",
+    "Business Systems Manager",
+    "Technical Project Manager"
+  ],
+  "core_keywords": [
+    "implementation", "onboarding", "client success", "customer success",
+    "SaaS", "Asana", "Jira", "Salesforce", "CRM", "project management",
+    "PMP", "agile", "scrum", "workflow automation", "QBR",
+    "quarterly business review", "portfolio management", "account management",
+    "escalation management", "cross-functional", "go-live", "kickoff",
+    "discovery workshop", "time-to-value", "retention", "API integration",
+    "change management", "SOP", "governance", "budgeting", "team leadership",
+    "mentoring", "training and enablement", "Zapier", "Monday.com",
+    "SharePoint", "Slack", "Google Analytics"
+  ],
+  "must_have_any": [
+    "project manager", "project management", "client success",
+    "customer success", "implementation", "program manager",
+    "account manager", "onboarding", "workflow"
+  ],
+  "exclude_keywords": [
+    "entry level", "internship", "unpaid", "commission only",
+    "software engineer", "developer", "warehouse", "driver"
+  ],
+  "location_preferences": {
+    "remote_ok": true,
+    "cities": ["Valparaiso, IN", "Chicago, IL", "Northwest Indiana"],
+    "prefer_remote": true
+  },
+  "min_score_to_notify": 3
+}

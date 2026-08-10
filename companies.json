@@ -1,0 +1,24 @@
+{
+  "greenhouse": [
+    "asana",
+    "hubspot",
+    "gainsight",
+    "zendesk",
+    "gitlab",
+    "notion",
+    "airtable",
+    "figma",
+    "webflow",
+    "monday",
+    "smartsheet"
+  ],
+  "lever": [
+    "netflix",
+    "brex",
+    "attentive",
+    "ramp",
+    "rippling",
+    "vercel",
+    "loom"
+  ]
+}
